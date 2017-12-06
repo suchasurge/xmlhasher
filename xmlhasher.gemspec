@@ -1,11 +1,9 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'xmlhasher/version'
+require File.join(File.dirname(__FILE__), 'lib/xmlhasher/version')
 
 Gem::Specification.new do |spec|
   spec.name          = 'xmlhasher'
-  spec.version       = XmlHasher::VERSION
+  spec.version       = ::XmlHasher::VERSION
   spec.authors       = ['Gene Drabkin']
   spec.email         = ['gene.drabkin@gmail.com']
   spec.description   = %q{Fast XML to Ruby Hash converter}
